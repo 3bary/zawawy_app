@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zawawy_app/constants.dart';
 import 'package:zawawy_app/core/utils/assets.dart';
 import 'package:zawawy_app/core/widgets/custom_button.dart';
+import 'package:zawawy_app/features/home/views/widgets/circle_image.dart';
 import 'package:zawawy_app/features/home/views/widgets/social_media_section.dart';
 
 class OnboardingViewBody extends StatelessWidget {
@@ -11,7 +12,8 @@ class OnboardingViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset(Assets.onboardingImagePath),
+        const SizedBox(height: 32,),
+        CircleImage(frameColor: Constants.secondaryColor, imagePath: Assets.onboardingImagePath),
         const SizedBox(height: 18,),
         const Text(
           'التطبيق الرسمي للشيخ',
