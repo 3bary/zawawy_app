@@ -10,14 +10,35 @@ class SocialMediaSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children:  [
-        SocialMediaIcon(imagePath: Assets.telegramLogoPath, url: Uri.parse(Constants.telegramUrl),),
-        SocialMediaIcon(imagePath: Assets.facebookLogoPath, url: Uri.parse(Constants.facebookUrl),),
-        SocialMediaIcon(imagePath: Assets.instagramLogoPath, url: Uri.parse(Constants.instagramUrl),),
-        SocialMediaIcon(imagePath: Assets.websiteLogoPath, url: Uri.parse(Constants.websiteUrl),),
-        SocialMediaIcon(imagePath: Assets.youtubeLogoPath, url: Uri.parse(Constants.youtubeUrl),),
-        SocialMediaIcon(imagePath: Assets.soundcloudLogoPath, url: Uri.parse(Constants.soundcloudUrl),),
-        SocialMediaIcon(imagePath: Assets.twitterLogoPath, url: Uri.parse(Constants.twitterUrl),),
+      children: [
+        SocialMediaIcon(
+          imagePath: Assets.telegramLogoPath,
+          link: Constants.telegramUrl,
+        ),
+        SocialMediaIcon(
+          imagePath: Assets.facebookLogoPath,
+          link: Constants.facebookUrl,
+        ),
+        SocialMediaIcon(
+          imagePath: Assets.instagramLogoPath,
+          link: Constants.instagramUrl,
+        ),
+        SocialMediaIcon(
+          imagePath: Assets.websiteLogoPath,
+          link: Constants.websiteUrl,
+        ),
+        SocialMediaIcon(
+          imagePath: Assets.youtubeLogoPath,
+          link: Constants.youtubeUrl,
+        ),
+        SocialMediaIcon(
+          imagePath: Assets.soundcloudLogoPath,
+          link: Constants.soundcloudUrl,
+        ),
+        SocialMediaIcon(
+          imagePath: Assets.twitterLogoPath,
+          link: Constants.twitterUrl,
+        ),
       ],
     );
   }
